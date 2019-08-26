@@ -1,0 +1,31 @@
+.brand-logo
+{
+    /*color: #372213 !important;*/
+    margin-left: 20px !important;
+    /*margin-top: -30px !important;*/
+}
+.sch
+{
+
+    color: inherit !important;
+}
+.nav-link{
+    color: #6c757d !important;
+}
+.nav-link:hover {
+    color: #000000 !important;
+    background-color: gold !important;
+    text-decoration: unset !important;
+}
+.dropdown-item:hover{
+    background-color: gold !important;
+}
+.nav-item{
+    margin-right: 5px !important;
+}
+#nav-mobile{
+    margin-right: 70px !important;
+}
+input, textarea{
+    color: #000000 !important;
+}

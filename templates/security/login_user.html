@@ -1,0 +1,60 @@
+{% from "security/_macros.html" import render_field_with_errors, render_field %}
+{#{% include "security/_messages.html" %}#}
+{#<h1>{{ _('Login') }}</h1>#}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_login.css') }}">
+    <title>Login</title>
+</head>
+
+<body class="bg">
+{#<body background="library.jpg"></body>#}
+{#<div class="bg"></div>#}
+<div style="margin-left:30%;padding:20px 0px;height:5px;width:500px">
+
+{#    <h2><font color="black"/>Login Form</h2>#}
+
+{#    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>#}
+
+    <div id="id01" >
+
+        <form action="{{ url_for_security('login') }}" method="POST" name="login_user_form"
+              class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                {{ login_user_form.hidden_tag() }}
+                {{ render_field_with_errors(login_user_form.email) }}
+                {{ render_field_with_errors(login_user_form.password) }}
+                {{ render_field_with_errors(login_user_form.remember) }}
+                {{ render_field(login_user_form.next) }}
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" onclick="window.location.href='http://127.0.0.1:5000/register'">
+                    Register
+                </button>
+                <span class="psw"> <a href="/reset">Forgot password?</a></span>
+            </div>
+
+        </form>
+
+    </div>
+{#        {% include "security/_menu.html" %}#}
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

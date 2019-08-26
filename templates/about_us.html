@@ -1,0 +1,452 @@
+{% extends "index.html" %}
+{% block title %}
+    About Us
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+          rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/style_about_us.css" rel="stylesheet">
+{% endblock %}
+{% block navitems %}
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/">Home
+                <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Reviews</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+{% endblock %}
+{% block content %}
+    <!-- Full Page Intro -->
+    <div class="view"
+         style="background-image: url('../static/images/library.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    {#                    <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">#}
+                    {#                        <img src="../static/images/books.jpg" alt="" class="img-fluid">#}
+                    {#                    </div>#}
+                    <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft"
+                         data-wow-delay="0.3s">
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" style="color: #fd7e14">Welcome to
+                            Bookfeeds </h1>
+                        <hr class="hr-light">
+                        <h6 class="mb-4">It specializes in reviews of frequently neglected published works of fiction,
+                            poetry, and literary and cultural criticism from small,
+                            regional, university, ethnic, avant-garde, and women's presses..</h6>
+                        <a class="btn btn-white" href="#about">Get started</a>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+        <div class="container">
+
+            <header class="section-header">
+                <h3>About Us</h3>
+                <p>Bookfeeds is an Book review based project. We started as a book review service. Shortly after our project's birth we expanded into offering a variety of services for authors..</p>
+            </header>
+
+            <div class="row about-cols">
+
+                <div class="col-md-4 wow fadeInUp">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="../static/img/mission.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Mission</a></h2>
+                        <p>
+                       Our Project’s goal is to provide quality service with professionalism, efficiency, and personal attention.
+                            We strive to be a good friend to authors, publishers, and publicists, thus our service standard will exceed their expectation. We stand committed to continuously develop ourselves today, tomorrow and for the years to come.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="../static/img/plans.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-list-outline"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Plan</a></h2>
+                        <p>
+                          Our Project’s goal is to provide quality service with professionalism,
+                            efficiency, and personal attention. We strive to be a good friend to authors,
+                            publishers, and publicists, thus our service standard will exceed their expectation.
+                            We stand committed to continuously develop ourselves today, tomorrow and for the years to come.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="../static/img/vission.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+                        </div>
+                        <h2 class="title"><a href="#">Our Vision</a></h2>
+                        <p>
+                           Our Project’s goal is to provide quality service with professionalism, efficiency,
+                            and personal attention. We strive to be a good friend to authors, publishers, and
+                            publicists, thus our service standard will exceed their expectation. We stand committed to
+                            continuously develop ourselves today, tomorrow and for the years to come.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #about -->
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+        <div class="container">
+
+            <header class="section-header wow fadeInUp">
+                <h3>Services</h3>
+                <p>Along with reviews of books, we provide services for authors such as book publicity services,
+                    editing, author interviews, literary book awards, as well as coaching to write book proposals....</p>
+            </header>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
+                    <h4 class="title"><a href="">Service</a></h4>
+                    <p class="description">Along with reviews of books, we provide services for authors
+                        such as book publicity services, editing, author interviews, literary book awards, as well
+                        as coaching to write book proposals....</p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+                    <h4 class="title"><a href="">REVIEWS AND PUBLICITY PACKAGES</a></h4>
+                    <p class="description">We offer reviews of books, ARCs, galleys, manuscripts, eBooks, audio CD's and DVDs.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-paper-outline"></i></div>
+                    <h4 class="title"><a href="">LITERARY AWARDS PROGRAM</a></h4>
+                    <p class="description">For over a decade, our awards program has been consistently all about supporting indie authors!
+                        We honor writers who self-published or had their books published by a university press,
+                        or independent book publisher .</p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                    <h4 class="title"><a href="">Services</a></h4>
+                    <p class="description">Along with reviews of books, we provide services for authors
+                        such as book publicity services, editing, author interviews, literary book awards,
+                        as well as coaching to write book proposals...</p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+                    <h4 class="title"><a href="">Services</a></h4>
+                    <p class="description">Along with reviews of books, we provide services for authors
+                        such as book publicity services, editing, author interviews, literary book awards,
+                        as well as coaching to write book proposals...</p>
+                </div>
+                <div class="col-lg-4 col-md-6 box wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-people-outline"></i></div>
+                    <h4 class="title"><a href="">Services</a></h4>
+                    <p class="description">Along with reviews of books, we provide services for authors
+                        such as book publicity services, editing, author interviews, literary book awards,
+                        as well as coaching to write book proposals...</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+        <div class="container">
+
+            <header class="section-header">
+                <h3>Testimonials</h3>
+            </header>
+
+            <div class="owl-carousel testimonials-carousel">
+
+                <div class="testimonial-item">
+                    <img src="../static/img/f.jpg" class="testimonial-img" alt="">
+                    <h3>Rafik Farhad</h3>
+                    <h4>Student</h4>
+                    <p>
+                        <img src="../static/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                     You turn the lights on and off here and if you can’t sleep and want something to read there are books in the living
+                        room…” her voice broke off. “Wait. Can you read?”
+His chin took a slight tilt upward. “Aye,” Faolán replied, his voice cool, “in English, Gaelic, Latin, or French.
+                        My Welsh is a bit rusty, and I doona remember any of the Greek I was taught except for words not
+                        fit for a lady’s ears. I can also count all the way up to…” He looked down and wiggled his
+                        large bare toes, “…twenty.”
+                        <img src="../static/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../static/img/r.jpg" class="testimonial-img" alt="">
+                    <h3>Abdur Razzak Rana</h3>
+                    <h4>Vice President </h4>
+                    <p>
+                        <img src="../static/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                      You turn the lights on and off here and if you can’t sleep and want something to read there are books in the
+                        living room…” her voice broke off. “Wait. Can you read?”
+His chin took a slight tilt upward. “Aye,” Faolán replied, his voice cool, “in English, Gaelic, Latin, or French.
+                        My Welsh is a bit rusty, and I doona remember any of the Greek I was taught except for words not
+                        fit for a lady’s ears. I can also count all the way up to…” He looked down and wiggled his large bare
+                        toes, “…twenty.” to feelings of guilt I was.
+                        <img src="../static/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../static/img/t.jpg" class="testimonial-img" alt="">
+                    <h3>Jannatul ferdous tuli</h3>
+                    <h4>Student</h4>
+                    <p>
+                        <img src="../static/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                        You turn the lights on and off here and if you can’t sleep and want something to read there are
+                        books in the living room…” her voice broke off. “Wait. Can you read?”
+His chin took a slight tilt upward. “Aye,” Faolán replied, his voice cool, “in English, Gaelic, Latin, or French.
+                        My Welsh is a bit rusty, and I doona remember any of the Greek I was taught except for
+                        words not fit for a lady’s ears. I can also count all the way up to…” He looked down and
+                        wiggled his large bare toes, “…twenty.”
+                        <img src="../static/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../static/img/s.jpg" class="testimonial-img" alt="">
+                    <h3>জ্ঞানপাপী সাক্ষর</h3>
+                    <h4>Student</h4>
+                    <p>
+                        <img src="../static/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                      You turn the lights on and off here and if you can’t sleep and want something to read there are
+                        books in the living room…” her voice broke off. “Wait. Can you read?”
+                        His chin took a slight tilt upward. “Aye,” Faolán replied, his voice cool, “in English, Gaelic, Latin, or French.
+                        My Welsh is a bit rusty, and I doona remember any of the Greek I was taught except for words
+                        not fit for a lady’s ears. I can also count all the way up to…” He looked down and wiggled his
+                        large bare toes, “…twenty.”  </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="../static/img/p.jpg" class="testimonial-img" alt="">
+                    <h3>Promei Afroz</h3>
+                    <h4>Student</h4>
+                    <p>
+                        <img src="../static/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                       You turn the lights on and off here and if you can’t sleep and want something to read there are books
+                        in the living room…” her voice broke off. “Wait. Can you read?”
+His chin took a slight tilt upward. “Aye,” Faolán replied, his voice cool, “in English, Gaelic, Latin, or French. My Welsh
+                        is a bit rusty, and I doona remember any of the Greek I was taught except for words not fit for a lady’s ears.
+                        I can also count all the way up to…” He looked down and wiggled his large bare toes, “…twenty.”
+                        <img src="../static/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+        <div class="container">
+            <div class="section-header wow fadeInUp">
+                <h3>Team</h3>
+                <p>However, to explain to you how all this mistaken idea of denouncing pleasure and pain</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-2 wow fadeInUp">
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="member">
+                        <img src="../static/img/y.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Yasir Afsar</h4>
+                                <span>Student</span>
+                                <div class="social">
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/yeasir.afsar"><i class="fa fa-facebook"></i></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="member">
+                        <img src="../static/img/d.jpg" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Kazi Salay Mahmud Dipta</h4>
+                                <span>Student</span>
+                                <div class="social">
+                                    <a href="https://twitter.com/salaydipta"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/salaydipta"><i class="fa fa-facebook"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+        </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+
+            <div class="section-header">
+                <h3>Contact Us</h3>
+                <p>However, to explain to you how all this mistaken idea of denouncing pleasure and pain</p>
+            </div>
+
+            <div class="row contact-info">
+
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ion-ios-location-outline"></i>
+                        <h3>Address</h3>
+                        <address>Shahjalal University of Science & Techonology</address>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+155895548855">017********</a></p>
+                         <p><a href="tel:+155895548855">017********</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ion-ios-email-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@example.com">salaydipta@gmail.com</a></p>
+                          <p><a href="mailto:info@example.com">yasirafsar@gmail.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form">
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                   data-rule="minlen:4" data-msg="Please enter at least 4 chars"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                   data-rule="email" data-msg="Please enter a valid email"/>
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                               data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section><!-- #contact -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    </main>
+
+{% endblock %}
+{% block scripts %}
+    <script src="../static/lib/jquery/jquery.min.js"></script>
+    <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/lib/easing/easing.min.js"></script>
+    <script src="../static/lib/superfish/hoverIntent.js"></script>
+    <script src="../static/lib/superfish/superfish.min.js"></script>
+    <script src="../static/lib/wow/wow.min.js"></script>
+    <script src="../static/lib/waypoints/waypoints.min.js"></script>
+    <script src="../static/lib/counterup/counterup.min.js"></script>
+    <script src="../static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../static/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../static/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="../static/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="../static/js/about.js"></script>
+
+{% endblock %}
